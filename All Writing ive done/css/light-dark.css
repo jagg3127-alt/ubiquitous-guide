@@ -1,0 +1,18 @@
+:root {
+  --background-color: grey;
+  --text-color: black;
+
+  --topnav: #9653ac;
+  --topnav-drop1: #874b9b;
+  --topnav-text: #3c2145;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] {
+  --background-color: #3F3F3F;
+  --text-color: #fff;
+}
