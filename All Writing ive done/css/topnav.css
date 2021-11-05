@@ -21,7 +21,7 @@ li {
  color: var(--topnav-text);
 }
 .nav-links a {
- color: var(--topnav-text);
+ color: var(--topnav-text) !important;
 }
 /* LOGO */
 a.logo {
