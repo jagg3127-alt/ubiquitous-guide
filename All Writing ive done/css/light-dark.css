@@ -57,7 +57,6 @@ transform: translateX( 1.14em);
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-size:4em;
 }
 
 
