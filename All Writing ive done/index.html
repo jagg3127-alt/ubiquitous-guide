@@ -25,7 +25,7 @@ return false;
  <body>
    <nav class="navbar">
      <!-- LOGO -->
-     <a class="logo" href="Top-Secret/Top-Secret/Top-Secret.html">Lunar Writing</a>
+     <a class="logo" href="Top-Secret/Top-Secret/Top-Secret.html">Writing</a>
      <!-- NAVIGATION MENU -->
      <ul class="nav-links">
        <!-- USING CHECKBOX HACK -->
@@ -224,26 +224,20 @@ return false;
 
 <link rel="stylesheet" href="css/contact.css">
   <div id="contacts" style="display:none">
-<h3>Contact us</h3>
-        <form id="fcf-form-id" class="fcf-form-class" method="post" action="Top-Secret/contacts.php">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
+<div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+                <form action="https://formspree.io/f/xrgrwoao" method="POST">
+                <input type="hidden" name="_subject" value="Contact request from personal website" /><br>
+Email:
+                <br><input type="email" name="_replyto" required>
+<br>Comment:<br>
+                <textarea class="z12" name="message" required></textarea><br>Name of writing:<br>
+					  <textarea class="z13" name="message" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
         </div>
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-        </div>
+    </div>
   </div>
 
 
