@@ -1,3 +1,45 @@
+.switch {
+  width: 3.4375em;
+  display: flex;
+  align-items: left;
+  vertical-align: top;
+}
+
+.switch div {
+  position: relative;
+  display: block;
+  background: var(--text-color);
+  width: 1.875em;
+  border-radius: 3.125em;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.fa-adjust {
+  transform: rotate(180deg);
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: black;
+  transition: 0.4s;
+  border-radius: 2.125em;
+  height: 0.75em;
+  width: 0.75em;
+  display: inline-block;
+  position: relative;
+} 
+
+input:checked + .slider {
+transform: translateX( 1.14em);
+}
+
+
+
+
 :root {
   --background-color: grey;
   --text-color: black;
@@ -7,12 +49,24 @@
   --topnav-text: #3c2145;
 }
 
+[data-theme="dark"] {
+  --background-color: #3F3F3F;
+  --text-color: grey;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  font-size:4em;
 }
 
-[data-theme="dark"] {
-  --background-color: #3F3F3F;
-  --text-color: #fff;
-}
+
+
+
+
+
+
+
+
+
+
