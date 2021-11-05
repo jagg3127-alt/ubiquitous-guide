@@ -10,7 +10,6 @@
 
     // When our button gets clicked
     themeSwitcher.onclick = function() {
-      
       // Get the current selected theme, on the first run
       // it should be `light`
       var currentTheme = document.documentElement.getAttribute("data-theme");
