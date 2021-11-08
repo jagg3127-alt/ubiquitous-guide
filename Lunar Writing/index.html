@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="css/light-dark.css">
+<link rel="stylesheet" href="css/topnav.css" />
+
+
+<script href="js/list.js"></script><script>
+function show(shown, hidden, hidden1, hidden2, hidden3, hidden4, hidden5, hidden6){ 
+document.getElementById(shown).style.display='block'; 
+document.getElementById(hidden).style.display='none'; 
+document.getElementById(hidden1).style.display='none'; 
+document.getElementById(hidden2).style.display='none'; 
+document.getElementById(hidden3).style.display='none'; 
+document.getElementById(hidden4).style.display='none'; 
+document.getElementById(hidden5).style.display='none'; 
+document.getElementById(hidden6).style.display='none'; 
+return false;
+}</script>
+ </head>
+ <body>
+   <nav class="navbar">
+     <!-- LOGO -->
+     <a class="logo" href="Top-Secret/Top-Secret/Top-Secret.html">Lunar Writing</a>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- USING CHECKBOX HACK -->
+       <input type="checkbox" id="checkbox_toggle" />
+       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a onclick="return show('home','about','book','L-stories','L-comics','S-stories','S-comics','contacts');" href="#home">Home</a></li>
+         <li><a onclick="return show('about','home','book','L-stories','L-comics','S-stories','S-comics','contacts');" href="#about">About</a></li>
+         <li class="services">
+           <a href="">Writing</a>
+           <!-- DROPDOWN MENU -->
+           <ul class="dropdown">
+             <li><a onclick="return show('book','home','about','L-stories','L-comics','S-stories','S-comics','contacts');" href="#books">books</a></li>
+             <li><a onclick="return show('L-stories','home','about','book','L-comics','S-stories','S-comics','contacts');" href="#long-stories">Long Stories</a></li>
+             <li><a onclick="return show('L-comics','S-stories','home','about','book','L-stories','S-comics','contacts');" href="#long-comics">Long Comics</a></li>
+             <li><a onclick="return show('S-stories','home','about','book','L-stories','L-comics','S-comics','contacts');" href="#short-stories">Short Stories</a></li>
+             <li><a onclick="return show('S-comics','S-stories','home','about','book','L-stories','L-comics','contacts');" href="#short-comics">Short Comics</a></li>
+           </ul>
+         </li>
+         <li><a onclick="return show('contacts','home','about','book','L-stories','L-comics','S-stories','S-comics');" href="#contacts">Contact</a></li>
+       </div>
+     </ul>
+   </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="home">
+ <form action="login/index.php">
+    <input type="submit" value="Login/Register" />
+</form>
+  </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <div id="about" style="display:none">
+    Content of page 2 about
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="book" style="display:none">
+    Content of page 1 book
+  </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="L-stories" style="display:none">
+    Content of page 2 Long Stories
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="L-comics" style="display:none">
+    Content of page 1 Long Comics
+  </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="S-stories" style="display:none">
+    Content of page 2 Short Stories
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="S-comics" style="display:none">
+    Content of page 1 Short Comics
+  </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/contact.css">
+  <div id="contacts" style="display:none">
+<div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+                <form action="https://formspree.io/f/xrgrwoao" method="POST">
+                <input type="hidden" name="_subject" value="Contact request from personal website" /><br>
+Email:
+                <br><input type="email" name="_replyto" required>
+<br>Comment:<br>
+                <textarea class="z12" name="message" required></textarea><br>Name of writing:<br>
+					  <textarea class="z13" name="message" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script href="js/light-dark.js">
+ </body>
+</html>
