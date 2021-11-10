@@ -2,7 +2,11 @@
 session_start();
 
 // connect to database
-$db = mysqli_connect('localhost', 'root', '', 'b13_30323164_multi_login');
+$hostname_db = "localhost"; // mysql hostname - always use localhost
+$database_db = "b13_30323164_multi_login"; // substitute your mysql database name
+$username_db = "b13_30323164"; // substitute your mysql user name
+$password_db = "eqwuioqp"; // your mysql users's password
+$db = mysqli_connect($hostname_db, $username_db, $password_db, $database_db) or die(mysql_error()); // make connection to mysql
 
 // variable declaration
 $username = "";
