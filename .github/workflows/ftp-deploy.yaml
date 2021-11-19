@@ -12,6 +12,6 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@master
       with:
-        ftp-server: ${{ secrets.files.000webhost.com:21 }}
+        ftp-server: ${{ files.000webhost.com }}
         ftp-username: ${{ secrets.lunar-writing }}
         ftp-password: ${{ secrets.eqwuioqp }}
